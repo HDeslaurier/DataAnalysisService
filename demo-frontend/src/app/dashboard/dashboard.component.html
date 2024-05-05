@@ -1,0 +1,34 @@
+<div>
+    <span>Best Selling Products By Quantity</span>
+    <ngx-charts-bar-vertical
+    [view]="productView"
+    [scheme]="colorScheme"
+    [results]="productsData"
+    [gradient]="gradient"
+    [xAxis]="showXAxis"
+    [yAxis]="showYAxis"
+    [showXAxisLabel]="showXAxisLabel"
+    [showYAxisLabel]="showYAxisLabel"
+    [xAxisLabel]="xAxisLabelProduct"
+    [yAxisLabel]="yAxisLabelProduct"
+    [animations]="animations"
+    >
+    </ngx-charts-bar-vertical>
+</div>
+<div>
+    <span>Sale Trends Per Month</span>
+    <ngx-charts-line-chart
+    [view]="monthsView"
+    [scheme]="colorScheme"
+    [results]="monthsData"
+    [gradient]="gradient"
+    [xAxis]="showXAxis"
+    [yAxis]="showYAxis"
+    [showXAxisLabel]="showXAxisLabel"
+    [showYAxisLabel]="showYAxisLabel"
+    [xAxisLabel]="xAxisLabelMonth"
+    [yAxisLabel]="yAxisLabelMonth"
+    [animations]="animations"
+    >
+    </ngx-charts-line-chart>
+</div>
